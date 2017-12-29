@@ -13,13 +13,13 @@ const CategoryBar = () => {
                     <span className="lnr lnr-layers"></span>
                 </li>
                 <li styleName='actionable'>
-                    <img src={react}/>
+                    <img src={react} alt='react-logo'/>
                 </li>
                 <li styleName='actionable'>
-                    <img src={redux}/>
+                    <img src={redux} alt='redux-logo'/>
                 </li>
                 <li styleName='actionable'>
-                    <img src={udacity}/>
+                    <img src={udacity} alt='udacity-logo'/>
                 </li>
             </ul>
             
