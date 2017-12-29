@@ -1,0 +1,37 @@
+.wrapper {
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.header{
+    display: block;
+    margin-bottom: 30px;
+}
+
+.author{
+    margin-bottom: 15px;
+}
+
+.info {
+    float: left;
+}
+
+.date {
+    margin-left: 5px;
+}
+
+.actions{
+    float: right;
+}
+
+.actions-space{
+    margin-right: 10px;
+}
+
+.actionable:hover {
+    cursor: pointer;
+}
+
+.comment{
+
+}
