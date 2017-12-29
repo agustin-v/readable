@@ -1,25 +1,25 @@
 import React from 'react'
 import CSSModules from 'react-css-modules'
 import styles from './actionBar.css'
+import Actions from './Actions'
 
-const ActionBar = ({label, action}) => {
-    if (action === 'sort'){
-        return(
-            <div styleName='wrapper'>
-                <div styleName='label'>{label}</div>
-                <div styleName='actions-wrapper'>
-                    <div>
-                        <i className="lnr lnr-calendar-full"></i>
-                        <span className="lnr lnr-chevron-down"></span>
-                    </div>
-                    <div>
-                        <span class="lnr lnr-thumbs-up"></span>
-                        <span className="lnr lnr-chevron-down"></span>
-                    </div>
+const ActionBar = ({label, action, back}) => {
+    return(
+        <div styleName='wrapper'>
+            {back
+                ?<div>
+                    <span styleName ='actionable' className='lnr lnr-chevron-left'></span>
                 </div>
+                :<div></div>
+            }
+            <div styleName='label'>{label}</div>
+            <div styleName=''>
+                {Actions({action})}
             </div>
+        </div>
         )
-    }
 }
+
+
 
 export default CSSModules(ActionBar, styles)
