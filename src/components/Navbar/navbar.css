@@ -1,0 +1,13 @@
+.navbar {
+    background-color: #2E3D49;
+    padding: 20px;
+}
+
+.text {
+    color: #FF9F00;	
+    font-family: Roboto;	
+    font-size: 48px;	
+    letter-spacing: 2px;	
+    line-height: 57px;	
+    text-align: center;
+}
