@@ -1,0 +1,56 @@
+.wrapper {
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.title {
+    font-family: Roboto;	
+    font-size: 28px;	
+    font-weight: 300;	
+    letter-spacing: 1px;	
+    line-height: 28px;
+}
+
+.author {
+    font-family: Roboto;	
+    font-size: 20px;	
+    font-weight: 100;	
+    line-height: 24px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.info-wrapper {
+    display: block;
+}
+
+.info-wrapper div {
+    display: block;
+}
+
+.info-right{
+    float: right;
+}
+
+.info-left {
+    float: left;
+}  
+
+.info-left div {
+    display: inline-flex;
+}
+
+.info-text {
+    font-family: Roboto;	
+    font-size: 18px;	
+    font-weight: 100;	
+    line-height: 20px;
+}
+
+.info-icon {
+    margin-right: 5px;
+}
+
+.info-first {
+    margin-right: 30px;
+}
