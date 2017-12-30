@@ -9,11 +9,18 @@ class PostsContainer extends Component {
     render(){
         return(
             <div styleName='wrapper'>
-                {Preview()}
-                {Preview()}
-                {Preview()}
-                {Preview()}
-                {Preview()}
+                {
+                    this.props.posts.map( (post) => {
+                        return <Preview key={post.id}
+                           author={post.author}
+                           title={post.title}
+                           id={post.id}
+                           commentCount={post.commentCount}
+                           voteScore={post.voteScore}
+                           timestamp={post.timestamp}
+                        />
+                    })
+                }
             </div>
         )
     }
