@@ -1,7 +1,7 @@
 import initialState from './initialState'
 import * as types from '../actions/actionTypes'
 
-export default function postsReducer( state = initialState.posts, action) {
+export default function postsReducer( state = initialState.sorting, action) {
     switch (action.type) {
         case types.SET_VOTES_SORTING:
             console.log('\n SET_VOTES_SORTING')
@@ -16,7 +16,7 @@ export default function postsReducer( state = initialState.posts, action) {
                 ...state,
                 time: action.time
             }
-            
+
         default:
             return state;
     }

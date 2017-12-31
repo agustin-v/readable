@@ -3,7 +3,7 @@ import CSSModules from 'react-css-modules'
 import styles from './actionBar.css'
 import Actions from './Actions'
 
-const ActionBar = ({label, action, back}) => {
+const ActionBar = ({label, action, back, votes, time}) => {
     return(
         <div styleName='wrapper'>
             {back
@@ -14,7 +14,7 @@ const ActionBar = ({label, action, back}) => {
             }
             <div styleName='label'>{label}</div>
             <div styleName=''>
-                {Actions({action})}
+                {Actions({action, votes, time})}
             </div>
         </div>
         )
