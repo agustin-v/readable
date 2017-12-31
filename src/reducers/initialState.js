@@ -1,3 +1,7 @@
 export default {
-    posts:[]
+    posts:[],
+    sorting: {
+        time: true,
+        votes: true
+    }
 }
