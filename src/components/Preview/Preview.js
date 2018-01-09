@@ -1,14 +1,17 @@
 import React from 'react'
 import CSSModules from 'react-css-modules'
+import { Link } from 'react-router-dom'
 import styles from './preview.css'
 import moment from 'moment'
 
 const Preview = ({title, author, id, commentCount, voteScore, timestamp }) => {
     return(
         <div styleName='wrapper'>
-            <div styleName='title'>
-                {title}
-            </div>
+            <Link to={`/post/${id}`}>
+                <div styleName='title'>
+                    {title}
+                </div>
+            </Link>
             <div styleName='author'>
                 {author}
             </div>
