@@ -22,10 +22,10 @@ const Actions = ({ action, votes, time }) => {
         return(
             <div styleName='actions'>
                 <div>
-                    <span styleName ='actionable' class="lnr lnr-pencil"></span>
+                    <span styleName ='actionable' className="lnr lnr-pencil"></span>
                 </div>
                 <div>
-                    <span styleName ='actionable' class="lnr lnr-cross"></span>
+                    <span styleName ='actionable' className="lnr lnr-cross"></span>
                 </div>
             </div> 
         )

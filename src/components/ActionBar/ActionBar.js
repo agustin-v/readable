@@ -4,10 +4,15 @@ import styles from './actionBar.css'
 import Actions from './Actions'
 
 const ActionBar = ({label, action, back, votes, time}) => {
+
+    const goBack = () => {
+        window.history.back();
+    }
+
     return(
         <div styleName='wrapper'>
             {back
-                ?<div>
+                ?<div onClick={goBack}>
                     <span styleName ='actionable' className='lnr lnr-chevron-left'></span>
                 </div>
                 :<div></div>
@@ -17,7 +22,7 @@ const ActionBar = ({label, action, back, votes, time}) => {
                 {Actions({action, votes, time})}
             </div>
         </div>
-        )
+    )
 }
 
 
