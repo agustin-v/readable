@@ -3,5 +3,8 @@ export default {
     sorting: {
         time: true,
         votes: true
-    }
+    },
+    currentPost: {
+        
+    },
 }
