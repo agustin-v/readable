@@ -1,18 +1,19 @@
 import React from 'react'
 import CSSModules from 'react-css-modules'
+import moment from 'moment'
 import styles from './comment.css'
 
-const Comment = () => {
+const Comment = ({id, author, timestamp, body, voteScore}) => {
     return(
         <div styleName='wrapper'>
             <div styleName='header'>
                 <div styleName='info'>
                     <div styleName='author'>
-                        Jane Doe
+                        {author}
                     </div>
                     <div>
                         <span className="lnr lnr-calendar-full"></span>
-                        <span styleName='date'>20/07/18</span>
+                        <span styleName='date'>{moment(timestamp).format('DD/MM/YY')}</span>
                     </div>
                 </div>
                 <div styleName='actions'>
@@ -21,7 +22,7 @@ const Comment = () => {
                 </div>
             </div>
             <div styleName='comment'>
-                
+                {body}
             </div>
         </div>
     )
