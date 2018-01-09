@@ -13,8 +13,8 @@ class App extends Component {
       <main>
         <Switch>
             <Route  exact path='/' component={HomeContainer}/>
-            <Route  exact path='/category' component={CategoryContainer}/>
-            <Route  exact path='/post' component={PostContainer}/>
+            <Route  exact path='/category/:category' component={CategoryContainer}/>
+            <Route  exact path='/post/:id' component={PostContainer}/>
             <Route  exact path='/edit' component={EditContainer}/>
 
             <Route  exact path='/*' component={NotFoundContainer}/>
